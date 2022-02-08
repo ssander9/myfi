@@ -1,15 +1,142 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #668b76; */
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #61917e;
+}
+
+.logo {
+  margin-right: auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #edf0f1;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li, a, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px; 
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #121b12;
+}
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgb(28, 48, 46);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgb(28, 48, 35, .5);
+}
+
+.page {
+  margin: 20px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color:rgb(15, 19, 18)
+}
+
+.form {
+  max-width: 500px;
+  padding: 30px 40px;
+  margin: 20px auto;
+  background-color: #61917e;
+  border-radius: 12px;
+}
+
+.form-entry {
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(15, 19, 18);
+}
+
+.form-button {
+  display: block;
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: fit-content;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(15, 19, 18);
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-button:hover {
+  transition: all 0.3s ease 0s;
+  background-color: rgba(55, 90, 87, 0.8);
+  color: #edf0f1;
+  outline: none;
+}
+
+.form-button:focus {
+  outline: none;
+}
+
+.clickable {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgba(53, 99, 87, 1);
+}
+
+.clickable:hover {
+  color: rgba(53, 99, 87, .5);
+  transition: all 0.3s ease 0s;
+  cursor:pointer;
+}
+
+.scenario {
+  max-width: 500px;
+  padding: 30px 40px;
+  margin: 20px auto;
+  display: inline-block;
+  border: 2px solid #61917e;
+  border-radius: 12px;
+}

@@ -1,0 +1,22 @@
+<div class='form'>
+  <%= form_with model: @user do |f| %>
+    
+    <div>
+      <%=f.label :name, class: 'form-entry' %>
+      <%=f.text_field :name, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%=f.label :email, class: 'form-entry' %>
+      <%=f.text_field :email, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.submit 'Update Profile', class: 'form-button' %>
+    </div>
+
+  <% end %>
+
+  <br>
+  <%= link_to "Don't want to make changes? Click here to return to the previous page.", user_path(current_user.id) %>
+</div>

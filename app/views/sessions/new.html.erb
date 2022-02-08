@@ -1,0 +1,27 @@
+<div class='form'>
+  <%= form_for :login do |f| %>
+    <div>
+      <%= f.label :email, class:'form-entry' %>
+      <%= f.text_field :email, class:'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :password, class:'form-entry' %>
+      <%= f.password_field :password, class:'form-entry'%>
+    </div>
+
+    <div>
+      <%= f.submit 'Log In', class:'form-button' %>
+    </div>
+  <% end %>
+  <br>
+
+  <%= link_to "Don't have an account? Sign up here!", new_user_path, class:'page' %>
+  <br>
+
+  <% if flash[:error] %>
+    <div class='error'>
+      <%= flash[:error] %>
+    </div>
+  <% end %>
+</div>

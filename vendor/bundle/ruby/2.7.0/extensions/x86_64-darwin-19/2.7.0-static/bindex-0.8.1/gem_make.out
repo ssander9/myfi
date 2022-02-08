@@ -1,0 +1,15 @@
+current directory: /Users/ssander/src/myfi2/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/ssander/.rubies/ruby-2.7.1/bin/ruby -I /Users/ssander/.rubies/ruby-2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220206-87832-1tnnqw7.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ssander/src/myfi2/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/ssander/src/myfi2/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/ssander/src/myfi2/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20220206-87832-1ona35e/skiptrace/internal

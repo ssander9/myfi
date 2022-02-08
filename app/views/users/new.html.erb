@@ -1,0 +1,27 @@
+<div class='form'>
+  <%= form_with model: @user do |f| %>
+    
+    <div>
+      <%=f.label :name, class: 'form-entry' %>
+      <%=f.text_field :name, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%=f.label :email, class: 'form-entry' %>
+      <%=f.text_field :email, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :password, class: 'form-entry' %>
+      <%= f.password_field :password, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.submit 'Sign Up', class: 'form-button' %>
+    </div>
+
+  <% end %>
+
+  <br>
+  <a class='page' href ='/login'>Already have an account? Click here to login</a>
+</div>
