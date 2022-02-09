@@ -1,0 +1,36 @@
+<div class='form'>
+  <%= form_with model: [@user, @user.scenarios.build] do |f| %>
+    
+    <div>
+      <%=f.label :title, class: 'form-entry' %>
+      <%=f.text_field :title, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%=f.label :description, class: 'form-entry' %>
+      <%=f.text_field :description, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :job, class: 'form-entry' %>
+      <%= f.text_field :job, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :goal, class: 'form-entry' %>
+      <%= f.text_field :goal, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :budget, class: 'form-entry' %>
+      <%= f.text_field :budget, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.submit 'Edit Scenario', class: 'form-button' %>
+    </div>
+
+  <% end %>
+
+  <br>
+</div>

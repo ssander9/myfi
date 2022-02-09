@@ -15,6 +15,9 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+  end
+  
   def edit
   end
 
@@ -24,6 +27,9 @@ class UsersController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
+  end
+
+  def destroy
   end
 
   private

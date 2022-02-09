@@ -1,7 +1,12 @@
 <div class='page'>
   <h1>Hi <%= @user.name %>!</h1>
   <br>
-  <p class='clickable'>Add a scenario<p>
+  <% @user.scenarios.each do |scenario| %>
+    <%= link_to scenario.title, user_scenario_path(@user, scenario), class:'clickable' %>
+    <br>
+  <% end %>
+  <br>
+  <%= link_to 'Add Scenario', new_user_scenario_path(@user.id), class:'clickable' %><br>
   <p class='clickable'>Add a job</p>
   <p class='clickable'>Add a budget</p>
   <br>

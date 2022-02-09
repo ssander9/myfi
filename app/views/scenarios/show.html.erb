@@ -1,0 +1,16 @@
+<div class='page'>
+  <%= link_to 'Back', user_path(@user.id), class:'clickable' %>
+  <br>
+  <br>
+  <p>Look it's a scenario!</p>
+  <p>Title: <%= @scenario.title %></p>
+  <p>Description: <%= @scenario.description %></p>
+  <p>Job: <%= @scenario.job %></p>
+  <p>Goal: <%= @scenario.goal %></p>
+  <p>Budget: <%= @scenario.budget %></p>
+  <br>
+  <%= link_to 'Edit Scenario', edit_user_scenario_path(@user.id), class:'clickable' %>
+  <br>
+  <%= link_to 'Delete Scenario', user_scenario_path(@user.id), method: :delete, class:'clickable' %>
+
+</div>
