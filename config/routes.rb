@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :scenarios do
       resources :budgets
     end
-    resources :job
+    resources :jobs
   end
 
   get '/login', to: 'sessions#new'

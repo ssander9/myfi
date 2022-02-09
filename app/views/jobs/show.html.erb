@@ -1,0 +1,21 @@
+<div class='page'>
+  <%= link_to 'Back', user_path(@user.id), class:'clickable' %>
+  <br>
+  <br>
+  
+  <p>Look it's a job!</p>
+  <br>
+
+  <p>Title: <%= @job.title %></p>
+  <p>Description: <%= @job.description %></p>
+  <p>State: <%= @job.state %></p>
+  <p>Salary: <%= @job.salary %></p>
+  <p>Bonus: <%= @job.bonus %></p>
+  <p>Annual Raise: <%= @job.salary_pct %></p>
+  <br>
+  
+  <%= link_to 'Edit Job', edit_user_job_path(@user.id), class:'clickable' %>
+  <br>
+  <%= link_to 'Delete Job', user_job_path(@user.id), method: :delete, class:'clickable' %>
+
+</div>

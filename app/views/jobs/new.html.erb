@@ -1,0 +1,61 @@
+<div class='form'>
+  <%= form_with model: [@user, @user.jobs.build] do |f| %>
+    
+    <div>
+      <%=f.label :title, class: 'form-entry' %>
+      <%=f.text_field :title, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%=f.label :description, class: 'form-entry' %>
+      <%=f.text_field :description, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :state, class: 'form-entry' %>
+      <%= f.text_field :state, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :salary, class: 'form-entry' %>
+      <%= f.number_field :salary, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :bonus, class: 'form-entry' %>
+      <%= f.number_field :bonus, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :salary_pct, class: 'form-entry' %>
+      <%= f.number_field :salary_pct, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :bonus_pct, class: 'form-entry' %>
+      <%= f.number_field :bonus_pct, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :emp_spon_pct, class: 'form-entry' %>
+      <%= f.number_field :emp_spon_pct, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :emp_match_pct, class: 'form-entry' %>
+      <%= f.number_field :emp_match_pct, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :health_pmt, class: 'form-entry' %>
+      <%= f.number_field :health_pmt, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.submit 'Add Job', class: 'form-button' %>
+    </div>
+
+  <% end %>
+
+  <br>
+</div>
