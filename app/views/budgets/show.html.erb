@@ -1,0 +1,21 @@
+<div class='page'>
+  <%= link_to 'Back', user_path(@user.id), class:'clickable' %>
+  <br>
+  <br>
+  
+  <p>Look it's a budget!</p>
+  <br>
+
+  <p>Title: <%= @budget.title %></p>
+  <p>Tithing: <%= @budget.tithing_net %></p>
+  <p>Rent: <%= @budget.rent %></p>
+  <p>Food: <%= @budget.food %></p>
+  <p>Travel: <%= @budget.travel %></p>
+  <p>Savings: <%= @budget.savings %></p>
+  <br>
+  
+  <%= link_to 'Edit Budget', edit_user_budget_path(@user.id), class:'clickable' %>
+  <br>
+  <%= link_to 'Delete Budget', user_budget_path(@user.id), method: :delete, class:'clickable' %>
+
+</div>

@@ -1,0 +1,91 @@
+<div class='form'>
+  <%= form_with model: [@user, @user.budgets.build] do |f| %>
+    
+    <div>
+      <%=f.label :title, class: 'form-entry' %>
+      <%=f.text_field :title, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%=f.label :tithing_net, class: 'form-entry' %>
+      <%=f.number_field :tithing_net, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :rent, class: 'form-entry' %>
+      <%= f.number_field :rent, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :food, class: 'form-entry' %>
+      <%= f.number_field :food, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :auto, class: 'form-entry' %>
+      <%= f.number_field :auto, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :insurance, class: 'form-entry' %>
+      <%= f.number_field :insurance, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :child, class: 'form-entry' %>
+      <%= f.number_field :child, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :childcare, class: 'form-entry' %>
+      <%= f.number_field :childcare, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :entertainment, class: 'form-entry' %>
+      <%= f.number_field :entertainment, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :travel, class: 'form-entry' %>
+      <%= f.number_field :travel, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :clothing, class: 'form-entry' %>
+      <%= f.number_field :clothing, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :personal_care, class: 'form-entry' %>
+      <%= f.number_field :personal_care, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :gifts, class: 'form-entry' %>
+      <%= f.number_field :gifts, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :misc_home, class: 'form-entry' %>
+      <%= f.number_field :misc_home, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :other, class: 'form-entry' %>
+      <%= f.number_field :other, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.label :savings, class: 'form-entry' %>
+      <%= f.number_field :savings, class: 'form-entry' %>
+    </div>
+
+    <div>
+      <%= f.submit 'Add Budget', class: 'form-button' %>
+    </div>
+
+  <% end %>
+
+  <br>
+</div>

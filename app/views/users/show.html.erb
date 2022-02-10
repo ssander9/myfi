@@ -3,15 +3,6 @@
   <br>
 
   <div>
-    <p>My Scenarios</p>
-    <% @user.scenarios.each do |scenario| %>
-      <%= link_to scenario.title, user_scenario_path(@user, scenario), class:'clickable' %>
-      <br>
-    <% end %>
-  </div>
-  <br>
-
-  <div>
     <p>My Jobs</p>
     <% @user.jobs.each do |job| %>
       <%= link_to job.title, user_job_path(@user, job), class:'clickable' %>
@@ -20,12 +11,30 @@
   </div>
   <br>
 
-  <p>Create Something New</p>
-  <%= link_to 'Add Scenario', new_user_scenario_path(@user.id), class:'clickable' %>
+  <div>
+    <p>My Budgets</p>
+    <% @user.budgets.each do |budget| %>
+      <%= link_to budget.title, user_budget_path(@user, budget), class:'clickable' %>
+      <br>
+    <% end %>
+  </div>
   <br>
+
+  <div>
+    <p>My Scenarios</p>
+    <% @user.scenarios.each do |scenario| %>
+      <%= link_to scenario.title, user_scenario_path(@user, scenario), class:'clickable' %>
+      <br>
+    <% end %>
+  </div>
+
+  <p>Create Something New</p>
   <%= link_to 'Add Job', new_user_job_path(@user.id), class:'clickable' %>
   <br>
-  <p class='clickable'>Add a budget</p>
+  <%= link_to 'Add Budget', new_user_budget_path(@user.id), class:'clickable' %>
+  <br>
+  <%= link_to 'Add Scenario', new_user_scenario_path(@user.id), class:'clickable' %>
+  <br>
   <br>
 
   <p>Other Stuff</p>

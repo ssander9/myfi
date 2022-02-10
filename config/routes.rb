@@ -4,9 +4,8 @@ Rails.application.routes.draw do
   get '/contact', to: 'home#contact'
 
   resources :users do
-    resources :scenarios do
-      resources :budgets
-    end
+    resources :scenarios
+    resources :budgets
     resources :jobs
   end
 

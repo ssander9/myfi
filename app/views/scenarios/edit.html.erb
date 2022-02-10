@@ -13,7 +13,7 @@
 
     <div>
       <%= f.label :job, class: 'form-entry' %>
-      <%= f.text_field :job, class: 'form-entry' %>
+      <%= f.select :job, Job.all.pluck(:title), class: 'form-entry' %>
     </div>
 
     <div>
@@ -23,7 +23,7 @@
 
     <div>
       <%= f.label :budget, class: 'form-entry' %>
-      <%= f.text_field :budget, class: 'form-entry' %>
+      <%= f.select :budget, Budget.all.pluck(:title), class: 'form-entry' %>
     </div>
 
     <div>

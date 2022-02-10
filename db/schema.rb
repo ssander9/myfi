@@ -10,7 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_09_134254) do
+ActiveRecord::Schema.define(version: 2022_02_09_142413) do
+
+  create_table "budgets", force: :cascade do |t|
+    t.string "title"
+    t.integer "tithing_net"
+    t.integer "rent"
+    t.integer "food"
+    t.integer "auto"
+    t.integer "insurance"
+    t.integer "child"
+    t.integer "childcare"
+    t.integer "entertainment"
+    t.integer "travel"
+    t.integer "clothing"
+    t.integer "personal_care"
+    t.integer "gifts"
+    t.integer "misc_home"
+    t.integer "other"
+    t.integer "savings"
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_budgets_on_user_id"
+  end
 
   create_table "jobs", force: :cascade do |t|
     t.string "title"
@@ -49,6 +72,7 @@ ActiveRecord::Schema.define(version: 2022_02_09_134254) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "budgets", "users"
   add_foreign_key "jobs", "users"
   add_foreign_key "scenarios", "users"
 end
